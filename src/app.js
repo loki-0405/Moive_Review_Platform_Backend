@@ -7,9 +7,9 @@ const app = express();
 
 // ✅ Enable CORS for your frontend
 app.use(cors({
-  origin: 'http://localhost:8081', // 👈 allow your frontend
-  credentials: true, // if you're using cookies/auth headers
+  origin: '*'
 }));
+
 
 // Middlewares
 app.use(express.json());
